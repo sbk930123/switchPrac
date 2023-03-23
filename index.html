@@ -9,7 +9,39 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  
+  <div id="quiz">
+    <h4>물에 빠지면 누굴 구할거임?</h4>
+    <button>와이프</button>
+    <button>부모님</button>
+    <button>자식</button>
+    <button>키우던 개새끼</button>
+  </div>
+
+  <script>
+
+    document.querySelector('#quiz').addEventListener('click', (e) => {
+      htmlWord = e.target.innerHTML;
+
+      switch(htmlWord) {
+        case '와이프':
+          alert('와이프 선택');
+          break;
+        case '부모님':
+          alert('부모님 선택');
+          break;
+        case '자식':
+          alert('자식 선택');
+          break;
+        case '키우던 개새끼':
+          alert('키우던 개새끼 선택');
+          break;
+        default:
+          alert('선택안함');
+      }
+    })
+
+    
+</script>
   
 </body>
 </html>
